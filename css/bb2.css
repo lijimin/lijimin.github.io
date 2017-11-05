@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+svg{
+    display: block;
+}
+#all{
+    position: relative;
+}
+
+#svg1{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+h1,h2 { text-align:center; font-family: verdana, tahoma, sans serif; color:white; }
+li { font-family: verdana, tahoma, sans serif; color:white; }
+g text {
+    font-weight:bold;
+    font-size:small;
+    fill:white;
+    stroke:none;
+    text-anchor:middle;
+}
+g circle {
+    stroke:rgba(255,255,255,0.8);
+    stroke-width:1;
+    fill:url("#radial1");
+}
+g circle:hover{
+    cursor: pointer;
+}
+g image{
+    display: none;
+}

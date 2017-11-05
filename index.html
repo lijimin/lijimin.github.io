@@ -3,8 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/bb2.css">
 </head>
-<body>
-<p>jsgusyfadjfh</p>
+<body onload="init();">
+<div id="all">
+    <!--气泡-->
+
+    <svg id="svg" version="1.1" baseProfile="full" width="100%" height="100%" viewBox="0 0 1366 649">
+
+        <defs>
+            <radialGradient id="radial1">
+                <stop offset="10%" stop-color="rgba(255,255,255,0)"></stop>
+                <stop offset="100%" stop-color="rgba(255,255,255,0.8)"></stop>
+            </radialGradient>
+        </defs>
+
+        <rect x="0" y="0" width="1366" height="649" fill="transparent"/>
+    </svg>
+
+    <!--背景-->
+    <svg id="svg1" width="100%" height="100%" viewBox="0 0 1366 649">
+        <!--设置渐变色-->
+        <defs>
+            <linearGradient id="linear1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="60%" stop-color="#7CD7F0"></stop>
+                <stop offset="100%" stop-color="#3DA5BF"></stop>
+            </linearGradient>
+            <linearGradient id="linear2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="5%" stop-color="#4BB7D5"></stop>
+                <stop offset="20%" stop-color="#5ACAE9"></stop>
+            </linearGradient>
+            <linearGradient id="linear3" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="50%" stop-color="#3CACCB"></stop>
+                <stop offset="100%" stop-color="#3CACCB"></stop>
+            </linearGradient>
+            <filter id="blur">
+                <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+            </filter>
+        </defs>
+        <rect x="0" y="0" width="1366" height="485" fill="url(#linear1)"></rect>
+        <rect x="0" y="485" width="1366" height="129" fill="url(#linear2)"></rect>
+        <rect x="0" y="614" width="1366" height="35" fill="url(#linear3)"></rect>
+        <rect x="614.7" y="0" height="485" width="27.32" fill="#F465A4"></rect>
+        <rect x="642.02" y="0" height="485" width="27.32" fill="#4C96E8"></rect>
+        <rect x="669.34" y="0" height="485" width="27.32" fill="#A4C75A"></rect>
+        <rect x="696.66" y="0" height="485" width="27.32" fill="#FBDB27"></rect>
+        <rect x="723.98" y="0" height="485" width="27.32" fill="#33C9B5"></rect>
+        <path d="M 614.7 485 L 642.02 485 L 601.04 614 L 546.4 614 z" fill="#ED64A1"></path>
+        <path d="M 642.02 485 L 669.34 485 L 655.68 614 L 601.04 614 z" fill="#4C96E8"></path>
+        <path d="M 669.34 485 L 696.66 485 L 710.32 614 L 655.68 614 z" fill="#A7C55A"></path>
+        <path d="M 696.66 485 L 723.98 485 L 764.96 614 L 710.32 614 z" fill="#F5DE27"></path>
+        <path d="M 723.98 485 L 751.3 485 L 819.6 614 L 764.96 614 z" fill="#32C8B6"></path>
+        <rect x="546.4" y="614" height="35" width="54.64" fill="#E8498A"></rect>
+        <rect x="601.04" y="614" height="35" width="54.64" fill="#337BE0"></rect>
+        <rect x="655.68" y="614" height="35" width="54.64" fill="#90B43D"></rect>
+        <rect x="710.32" y="614" height="35" width="54.64" fill="#F1D216"></rect>
+        <rect x="764.96" y="614" height="35" width="54.64" fill="#1DB7A4"></rect>
+        <rect x="227" y="100" height="319" width="912" fill="rgba(70,130,180,0.7)"></rect>
+        <image xlink:href="img/imgs/t2.jpg" x="243" y="116" width="880" height="287"></image>
+        <ellipse cx="683" cy="550" rx="400" ry="20" fill="rgba(70,130,180,0.3)" filter="url(#blur)"></ellipse>
+    </svg>
+
+</div>
+
+<!---------------------------->
+<script src="bb2.js"></script>
+<script>
+    var w=window.innerWidth;
+    var h=window.innerHeight;
+    document.getElementById('all').style.height=h+'px';
+    document.getElementById('all').style.width=w+'px';
+    //$('#all').css('height',h);
+</script>
 </body>
 </html>
