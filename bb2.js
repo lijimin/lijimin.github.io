@@ -1,8 +1,8 @@
 var bubbles = [
-    {label:"主页", img:"img/imgs/zyl.jpg", href:"https://lijimin.github.io/index.html"},
-    {label:"简历", img:"img/imgs/jll.jpg", href:"https://lijimin.github.io/jianli.html"},
-    {label:"作品", img:"img/imgs/zpl.jpg", href:"https://lijimin.github.io/inin.html"},
-    {label:"其他", img:"img/imgs/qtl.jpg", href:"https://lijimin.github.io/notes.html"}
+    {label:"主页", img:"img/imgs/zyl.jpg", href:"lijimin.github.io"},
+    {label:"简历", img:"img/imgs/jll.jpg", href:"lijimin.github.io/jianli.html"},
+    {label:"作品", img:"img/imgs/zpl.jpg", href:"lijimin.github.io/inin.html"},
+    {label:"其他", img:"img/imgs/qtl.jpg", href:"lijimin.github.io/notes.html"}
 ];
 
 var svgns = "http://www.w3.org/2000/svg";
